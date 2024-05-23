@@ -1,13 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..300&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Calculator TS</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <header>
+      <img id="logoTypescript" src="favicon.svg" alt="Typescrip Logo" />
+    </header>
+    <main class="container">
+      <section class="inputs">
+        <input class="inputTop" type="text" />
+        <input class="inputBottom" type="text" />
+      </section>
+      <section id="keyboard">
+        <buttom id="C">C</buttom>
+        <buttom id="plusminus">±</buttom>
+        <buttom id="porcentaje">%</buttom>
+        <buttom class="operation" id="division">÷</buttom>
+        <buttom id="seven">7</buttom>
+        <buttom id="eight">8</buttom>
+        <buttom id="nine">9</buttom>
+        <buttom class="operation" id="multiply">×</buttom>
+        <buttom id="four">4</buttom>
+        <buttom id="five">5</buttom>
+        <buttom id="six">6</buttom>
+        <buttom class="operation" id="minus">-</buttom>
+        <buttom id="one">1</buttom>
+        <buttom id="two">2</buttom>
+        <buttom id="three">3</buttom>
+        <buttom class="operation" id="plus">+</buttom>
+        <buttom id="cero">0</buttom>
+        <buttom id="parentesis">( )</buttom>
+        <buttom id="point">.</buttom>
+        <buttom class="operation" id="equal">=</buttom>
+      </section>
+    </main>
+    <footer>
+      <a
+        id="linkGithub"
+        href="https://github.com/achipre/calculator-typescript"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img id="logoGithub" src="github.svg" alt="Typescrip Logo" />
+        <span id="textGithub"> <span></span>Open Repository</span>
+      </a>
+    </footer>
+    <script type="module" src="./src/main.ts"></script>
   </body>
 </html>
